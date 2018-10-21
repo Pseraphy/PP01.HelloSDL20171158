@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP08.SingletonTM", "PP08.Si
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP09.Inheritance", "PP09.Inheritance\PP09.Inheritance.vcxproj", "{CAD97550-E521-405D-ABF6-4EE28FF77D37}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP10.Polymorphism", "PP10.Polymorphism\PP10.Polymorphism.vcxproj", "{48CD9C3F-88DD-4ED5-8E52-A645D593695A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{CAD97550-E521-405D-ABF6-4EE28FF77D37}.Release|x64.Build.0 = Release|x64
 		{CAD97550-E521-405D-ABF6-4EE28FF77D37}.Release|x86.ActiveCfg = Release|Win32
 		{CAD97550-E521-405D-ABF6-4EE28FF77D37}.Release|x86.Build.0 = Release|Win32
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Debug|x64.ActiveCfg = Debug|x64
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Debug|x64.Build.0 = Debug|x64
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Debug|x86.ActiveCfg = Debug|Win32
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Debug|x86.Build.0 = Debug|Win32
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Release|x64.ActiveCfg = Release|x64
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Release|x64.Build.0 = Release|x64
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Release|x86.ActiveCfg = Release|Win32
+		{48CD9C3F-88DD-4ED5-8E52-A645D593695A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
