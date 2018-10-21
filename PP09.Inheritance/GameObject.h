@@ -2,6 +2,7 @@
 #include<SDL.h>
 #include <iostream>
 using namespace std;
+
 class GameObject
 {
 public:

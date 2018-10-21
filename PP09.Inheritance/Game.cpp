@@ -1,14 +1,19 @@
 #include "Game.h"
 #include <SDL_image.h>
+#include "TextreManager.h"
+
 bool Game::init(const char* title, int xpos, int ypos,
 	int width, int height, bool fullscreen)
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
 	{
+
 		m_pWindow = SDL_CreateWindow(title, xpos, ypos, width, height, SDL_WINDOW_SHOWN);
 		if (m_pWindow != 0)
 		{
 			m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
+
+			
 		}
 
 		m_bRunning = true;
@@ -16,18 +21,20 @@ bool Game::init(const char* title, int xpos, int ypos,
 		// load 부분 대치   
 		if (!TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer))
 		{
+
 			return false;
 		}
-
+		m_go.load(100, 100, 128, 82, "animate");
+		m_player.load(300, 300, 128, 82, "animate");
 		//m_textureManager.load("assets/animate-alpha.png", "animate", m_pRenderer);
 
 	}
 	else {
 		return false; // sdl could not initialize
-		m_go.load(100, 100, 128, 82, "animate");
-		m_player.load(300, 300, 128, 82, "animate");
+	
 	}
 	return true;
+
 }
 void Game::update()
 {
