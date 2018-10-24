@@ -1,6 +1,6 @@
 #include "Game.h"
 #include <SDL_image.h>
-#include "TextreManager.h"
+#include "TextureManager.h"
 
 bool Game::init(const char* title, int xpos, int ypos,
 	int width, int height, bool fullscreen)

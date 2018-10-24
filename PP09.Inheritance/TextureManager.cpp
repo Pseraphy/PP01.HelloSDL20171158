@@ -1,4 +1,4 @@
-#include "TextreManager.h"
+#include "TextureManager.h"
 
 #include <SDL_image.h>
 
