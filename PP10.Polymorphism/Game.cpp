@@ -27,18 +27,21 @@ bool Game::init(const char* title, int xpos, int ypos,
 		//m_go.load(100, 100, 128, 82, "animate");
 		//m_player.load(300, 300, 128, 82, "animate");
 
-		m_go = new GameObject();
-		m_player = new Player();
+	//	m_go = new GameObject();
+		//m_player = new Player();
 		m_enemy = new Enemy();
+		m_monster = new Monster();
 
-		m_go->load(100, 100, 128, 82, "animate");
-		m_player->load(300, 300, 128, 82, "animate");
+		//m_go->load(100, 100, 128, 82, "animate");
+		//m_player->load(300, 300, 128, 82, "animate");
 		m_enemy->load(0, 0, 128, 82, "animate");
+		m_monster->load(300, 300, 128, 82, "animate");
+	
 
-		m_gameObjects.push_back(m_go);
-		m_gameObjects.push_back(m_player);
+	//	m_gameObjects.push_back(m_go);
+		//m_gameObjects.push_back(m_player);
 		m_gameObjects.push_back(m_enemy);
-
+		m_gameObjects.push_back(m_monster);
 
 		//m_textureManager.load("assets/animate-alpha.png", "animate", m_pRenderer);
 

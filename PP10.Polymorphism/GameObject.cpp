@@ -10,7 +10,8 @@ void GameObject::load(int x, int y, int width, int height,
 	m_height = height;
 	m_textureID = textureID;
 	m_currentRow = 1;
-	m_currentFrame = 1;
+	m_currentFrame = 1;//이미지 번호
+
 }
 
 void GameObject::draw(SDL_Renderer* pRenderer)
@@ -22,5 +23,9 @@ void GameObject::draw(SDL_Renderer* pRenderer)
 
 void GameObject::update()
 {
-	m_x += 1;
+	
+		m_x += 1; //
+	
+	
 }
+//100, 100, 640, 480,
