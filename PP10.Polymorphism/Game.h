@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "SDL.h"
 #include "GameObject.h"
 #include "Player.h"
@@ -20,7 +20,7 @@ public:
 	bool running() { return m_bRunning; }
 
 
-	
+
 
 private:
 	SDL_Window * m_pWindow;
@@ -41,6 +41,6 @@ private:
 	//TextureManager m_textureManager;
 
 	//SDL_Texture* m_pTexture; // the new SDL_Texture variable
-	//SDL_Rect m_sourceRectangle; // ¿øº» »ç°¢Çü 
-	//SDL_Rect m_destinationRectangle; // ´ë»ó »ç°¢Çü 
+	//SDL_Rect m_sourceRectangle; // Â¿Ã¸ÂºÂ» Â»Ã§Â°Â¢Ã‡Ã¼ 
+	//SDL_Rect m_destinationRectangle; // Â´Ã«Â»Ã³ Â»Ã§Â°Â¢Ã‡Ã¼ 
 };
