@@ -3,8 +3,10 @@
 #include "Enemy.h"
 #include <SDL_image.h>
 #include "TextureManager.h"
+#include "InputHandler.h"
 
 Game* Game::s_pInstance = 0;
+InputHandler* InputHandler::s_pInstance = 0;
 
 bool Game::init(const char* title, int xpos, int ypos,
 	int width, int height, bool fullscreen)
@@ -25,13 +27,18 @@ bool Game::init(const char* title, int xpos, int ypos,
 			return false;
 		}
 
+
 		m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
 		m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
+	
+
 	}
 	else {
 		return false; // sdl could not initialize
+
 	}
 	return true;
+
 }
 void Game::update()
 {
@@ -56,8 +63,10 @@ void Game::clean()
 	std::cout << "cleanig game\n";
 	SDL_DestroyWindow(m_pWindow);
 	SDL_DestroyRenderer(m_pRenderer);
+	TheInputHandler::Instance()->clean();
 	SDL_Quit();
 }
+
 void Game::handleEvents()
 {
 	SDL_Event event;
@@ -72,4 +81,5 @@ void Game::handleEvents()
 			break;
 		}
 	}
+	TheInputHandler::Instance()->update();
 }
